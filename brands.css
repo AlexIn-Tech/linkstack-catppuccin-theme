@@ -1048,3 +1048,79 @@ filter: brightness(90%);
 .button.button-youtube-music:focus {
   filter: brightness(90%);
 }
+
+/* Brands without a style in the default theme
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button.button-bluesky {
+  color: var(--ctp-base);
+  background-color: var(--ctp-blue);
+}
+.button.button-behance {
+  color: var(--ctp-base);
+  background-color: var(--ctp-blue);
+}
+.button.button-gdrive {
+  color: var(--ctp-base);
+  background-color: var(--ctp-blue);
+}
+.button.button-xbox {
+  color: var(--ctp-base);
+  background-color: var(--ctp-green);
+}
+.button.button-cashapp_btc {
+  color: var(--ctp-base);
+  background-color: var(--ctp-green);
+}
+.button.button-cashapp_dollar {
+  color: var(--ctp-base);
+  background-color: var(--ctp-green);
+}
+.button.button-cashapp_pound {
+  color: var(--ctp-base);
+  background-color: var(--ctp-green);
+}
+.button.button-onlyfans {
+  color: var(--ctp-base);
+  background-color: var(--ctp-sky);
+}
+.button.button-last-fm {
+  color: var(--ctp-base);
+  background-color: var(--ctp-red);
+}
+.button.button-trakt {
+  color: var(--ctp-base);
+  background-color: var(--ctp-red);
+}
+.button.button-pleroma {
+  color: var(--ctp-base);
+  background-color: var(--ctp-peach);
+}
+.button.button-furaffinity {
+  color: var(--ctp-base);
+  background-color: var(--ctp-yellow);
+}
+.button.button-email,
+.button.button-email_alt,
+.button.button-phone,
+.button.button-share,
+.button.button-vcard,
+.button.button-blog,
+.button.button-llc,
+.button.button-linkstack,
+.button.button-streams,
+.button.button-simplex,
+.button.button-pronounspage,
+.button.button-picarto,
+.button.button-itaku,
+.button.button-throne,
+.button.button-booth,
+.button.button-friendica,
+.button.button-firefish,
+.button.button-hearthisat {
+  color: var(--on-accent);
+  background-color: var(--accent);
+}
+.button.button-threads {
+  color: var(--ctp-text);
+  background-color: var(--ctp-surface0);
+}
