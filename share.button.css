@@ -1,4 +1,6 @@
 .share-icon {
+  /* !important: LinkStack sets color:black inline on this icon */
+  color: var(--ctp-text) !important;
   padding: 0px 8px 3.5px 0px;
   vertical-align: middle;
   width: 20px;
