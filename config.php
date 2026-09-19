@@ -45,7 +45,7 @@ return [
     | 
     */
 
-    'enable_custom_code' => 'false',
+    'enable_custom_code' => 'true',
 
     // Disable individual files (only applies if above is 'true').
     'enable_custom_head'     => 'true',

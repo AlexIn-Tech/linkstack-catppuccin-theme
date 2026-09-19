@@ -20,3 +20,15 @@ Down below, you can find a few examples using this function:
 
 --}}
 
+{{-- Apply the saved Catppuccin flavor/accent before first paint to avoid a flash --}}
+<script>
+(function () {
+  try {
+    var d = document.documentElement;
+    var f = localStorage.getItem('ctp-flavor');
+    var a = localStorage.getItem('ctp-accent');
+    if (['latte', 'frappe', 'macchiato', 'mocha'].indexOf(f) > -1) d.setAttribute('data-flavor', f);
+    if (['rosewater', 'flamingo', 'pink', 'mauve', 'red', 'maroon', 'peach', 'yellow', 'green', 'teal', 'sky', 'sapphire', 'blue', 'lavender'].indexOf(a) > -1) d.setAttribute('data-accent', a);
+  } catch (e) {}
+})();
+</script>
