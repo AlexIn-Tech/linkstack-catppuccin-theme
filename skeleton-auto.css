@@ -25,6 +25,8 @@
 
 :root {
   color-scheme: light;
+  --icon-accent: none;
+  --icon-neutral: invert(1);
   --ctp-rosewater: #dc8a78;
   --ctp-flamingo: #dd7878;
   --ctp-pink: #ea76cb;
@@ -57,6 +59,8 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-flavor]) {
     color-scheme: dark;
+    --icon-accent: invert(1);
+    --icon-neutral: none;
     --ctp-rosewater: #f5e0dc;
     --ctp-flamingo: #f2cdcd;
     --ctp-pink: #f5c2e7;
@@ -88,6 +92,8 @@
 
 [data-flavor="latte"] {
   color-scheme: light;
+  --icon-accent: none;
+  --icon-neutral: invert(1);
   --ctp-rosewater: #dc8a78;
   --ctp-flamingo: #dd7878;
   --ctp-pink: #ea76cb;
@@ -118,6 +124,8 @@
 
 [data-flavor="frappe"] {
   color-scheme: dark;
+  --icon-accent: invert(1);
+  --icon-neutral: none;
   --ctp-rosewater: #f2d5cf;
   --ctp-flamingo: #eebebe;
   --ctp-pink: #f4b8e4;
@@ -148,6 +156,8 @@
 
 [data-flavor="macchiato"] {
   color-scheme: dark;
+  --icon-accent: invert(1);
+  --icon-neutral: none;
   --ctp-rosewater: #f4dbd6;
   --ctp-flamingo: #f0c6c6;
   --ctp-pink: #f5bde6;
@@ -178,6 +188,8 @@
 
 [data-flavor="mocha"] {
   color-scheme: dark;
+  --icon-accent: invert(1);
+  --icon-neutral: none;
   --ctp-rosewater: #f5e0dc;
   --ctp-flamingo: #f2cdcd;
   --ctp-pink: #f5c2e7;

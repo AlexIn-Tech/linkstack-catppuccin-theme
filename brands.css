@@ -74,6 +74,8 @@ button:hover,
   vertical-align: middle;
   width: 20px;
   height: 20px;
+  /* Icons are white glyphs (see extra/custom-icons); flip them to match the button text colour */
+  filter: var(--icon-accent);
 }
 
 
@@ -1123,4 +1125,30 @@ filter: brightness(90%);
 .button.button-threads {
   color: var(--ctp-text);
   background-color: var(--ctp-surface0);
+}
+
+/* Icons on neutral (Surface) buttons use the opposite polarity to icons on accent buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button.button-all-inkl .icon,
+.button.button-bookwyrm .icon,
+.button.button-codepen .icon,
+.button.button-dev-to .icon,
+.button.button-epic-games .icon,
+.button.button-github .icon,
+.button.button-goodreads .icon,
+.button.button-playstore .icon,
+.button.button-kit .icon,
+.button.button-lemmy .icon,
+.button.button-letterboxd .icon,
+.button.button-matrix .icon,
+.button.button-medium .icon,
+.button.button-notion .icon,
+.button.button-plemora .icon,
+.button.button-steam .icon,
+.button.button-threads .icon,
+.button.button-tiktok .icon,
+.button.button-tumblr .icon,
+.button.button-unity .icon,
+.button.button-vrchat .icon {
+  filter: var(--icon-neutral);
 }
