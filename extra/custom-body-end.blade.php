@@ -42,6 +42,18 @@
 </div>
 
 <script>
+// Fallback for browsers without CSS `content: url()` on <img>: swap LinkStack's stock avatar for the Catppuccin logo
+(function () {
+  var av = document.getElementById('avatar');
+  if (av && /\/logo\.svg(\?.*)?$/.test(av.getAttribute('src') || '')) {
+    av.src = '{{ themeAsset('avatar.png') }}';
+    av.style.width = '128px';
+    av.style.borderRadius = '50%';
+  }
+})();
+</script>
+
+<script>
 (function () {
   var FLAVORS = [
     ['auto', 'Auto', null],

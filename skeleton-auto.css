@@ -340,6 +340,20 @@
 
   .social-icon { color: var(--text); }
 
+  /* Default avatar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Shown only while a user has no avatar of their own (LinkStack falls back to its stock logo.svg) */
+  img#avatar[src$="/logo.svg"] {
+    /* Hide the stock logo (pushed out of the box) and paint the Catppuccin logo behind it */
+    object-fit: none;
+    object-position: -9999px 0;
+    background: url("extra/custom-assets/avatar.png") center / cover no-repeat;
+    /* !important: LinkStack sets width:auto inline on this element */
+    width: 128px !important;
+    min-width: 128px !important;
+    height: 128px !important;
+    border-radius: 50%; }
+
   /* Code
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   code {
